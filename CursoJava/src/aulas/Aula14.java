@@ -88,7 +88,7 @@ public class Aula14 {
 	    case 1:
 		System.out.println("Domingo");
 		System.out.println("Final de semana");
-		
+		break;
 	    case 7:
 	    System.out.println("Sábado");
 	    System.out.println("Final de semana");

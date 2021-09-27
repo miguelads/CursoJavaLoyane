@@ -245,33 +245,35 @@ public class Resolução {
        				
        			}   */ 
        
-                System.out.println("Digite um numero de 1 até 7 para o sistema "
-                		+ "informar o dia da semana!");
-                System.out.println("Digite um numero");               
-                int numero = sc.nextInt();
-                boolean cont = true;
                 
-	                while(cont == true) {
+                boolean resultado = true;
+                String valor;
+                
+	                while(resultado == true) {
+	                	System.out.println("Digite um numero de 1 até 7 para o sistema "
+	                    		+ "informar o dia da semana!");
+	                    System.out.println("Digite um numero");               
+	                    int numero = sc.nextInt();
 	                	switch(numero) {
 	                	
 	                		case 1:
 	                			System.out.println("Domingo - Final de semana!");
 	                			System.out.println("Deseja continuar sim ou não");
-	                			String resultado = sc.next();
-	                			if(resultado == "sim") {
-	                				cont = true;
+	                			valor = sc.next();
+	                			if(valor.equalsIgnoreCase("sim")) {
+	                				resultado = true;
 	                			}else {
-	                				cont = false;
+	                				resultado = false;
 	                			}
 	                			break;
 	                		case 2:
 	                			System.out.println("Segunda - Dia de semana!");
 	                			System.out.println("Deseja continuar sim ou não");
-	                			String resultado2 = sc.next();
-	                			if(resultado2 == "sim") {
-	                				cont = true;
+	                			 valor = sc.next();
+	                			if(valor.equalsIgnoreCase("sim")) {
+	                				resultado = true;
 	                			}else {
-	                				cont = false;
+	                				resultado = false;
 	                			}
 	                			break;
 	                	}
