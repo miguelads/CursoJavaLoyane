@@ -245,7 +245,7 @@ public class Resolução {
        				
        			}   */ 
        
-                
+                /*commit teste*/
                 boolean resultado = true;
                 String valor;
                 
